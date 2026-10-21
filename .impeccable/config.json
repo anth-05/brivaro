@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T11:46:49.275Z",
+        "reason": "Claude: flagged nodes are full-bleed sections/wrappers with padded children and a list whose border-top is its first divider; verified in desktop + 390px renders"
+      },
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T11:46:53.062Z",
+        "reason": "Claude: only uppercase in the file is the 34-char label above the h1, not body text; it was literal uppercase before this session"
+      },
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T11:57:32.664Z",
+        "reason": "Claude: 0.1em only on short literal-uppercase section labels (max ~30 chars), the sanctioned case; verified every occurrence"
+      }
+    ]
+  }
+}

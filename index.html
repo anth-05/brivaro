@@ -1,37 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
-<title>Brivaro: bemiddeling in zorg en beveiliging</title>
-<meta name="description" content="Brivaro bemiddelt in zorg en beveiliging. Vakmensen met een hart voor het werk, die doen wat ze beloven." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B4B91'/%3E%3Ctext x='32' y='45' font-family='Poppins,Arial,sans-serif' font-weight='700' font-size='38' text-anchor='middle' fill='%23fff'%3EB%3C/text%3E%3C/svg%3E" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brivaro | Zorgpersoneel en beveiligers voor je organisatie</title>
+<meta name="description" content="Personeel nodig in de zorg of beveiliging? Brivaro levert vakmensen met gecheckte opleiding en ervaring, met één vast aanspreekpunt. Bespreek je personeelsvraag.">
+<link rel="canonical" href="https://brivarobemiddeling.nl/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0F1B2E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Brivaro">
+<meta property="og:url" content="https://brivarobemiddeling.nl/">
+<meta property="og:title" content="Brivaro | Vakmensen in zorg en beveiliging voor je organisatie">
+<meta property="og:description" content="Personeel nodig? Zorgmedewerkers en gecertificeerde beveiligers, persoonlijk geselecteerd. Bespreek je personeelsvraag.">
+<meta property="og:image" content="https://brivarobemiddeling.nl/uploads/og-brivaro.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Zorgmedewerker in blauw uniform met stethoscoop">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B4B91'/%3E%3Ctext x='32' y='45' font-family='Poppins,Arial,sans-serif' font-weight='700' font-size='38' text-anchor='middle' fill='%23fff'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="uploads/zorgmedewerker-brivaro-1600.jpg" imagesrcset="uploads/zorgmedewerker-brivaro-800.jpg 800w, uploads/zorgmedewerker-brivaro-1600.jpg 1600w" imagesizes="(min-width: 900px) 52vw, 100vw" fetchpriority="high">
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   html, body { margin: 0; padding: 0; background: #0F1B2E; scroll-behavior: smooth; }
   body { font-family: Poppins, "Helvetica Neue", Arial, sans-serif; font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; }
   * { box-sizing: border-box; }
+  ::selection { background: #5B9BF5; color: #0F1B2E; }
   a { color: #1B4B91; text-decoration: none; }
   a:hover { color: #163d77; }
   input, textarea, button { font-family: inherit; }
+  input, textarea { caret-color: #1B4B91; }
+  [data-file] { cursor: pointer; }
+  [data-file]::file-selector-button { margin-right: 12px; padding: 8px 16px; border: 0; border-radius: 999px; background: #0F1B2E; color: #ffffff; font: inherit; font-weight: 600; cursor: pointer; transition: background 150ms ease; }
+  [data-file]:hover::file-selector-button { background: #1B4B91; }
   @keyframes bv-spin { to { transform: rotate(360deg); } }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
-</style> 
-</helmet>
+  /* Reduced motion: keep fades and colour feedback, drop movement and scaling */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition-property: opacity, color, background-color, border-color !important; }
+    [data-glass] { transform: none !important; }
+  }
+  @media (prefers-reduced-transparency: reduce) {
+    [data-glass] { background: #0F1B2E !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+  }
+  @media (prefers-contrast: more) {
+    [data-glass] { background: #0F1B2E !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; border-color: rgba(255,255,255,0.6) !important; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EmploymentAgency",
+  "@id": "https://brivarobemiddeling.nl/#organisatie",
+  "name": "Brivaro",
+  "url": "https://brivarobemiddeling.nl/",
+  "email": "info@brivarobemiddeling.nl",
+  "image": "https://brivarobemiddeling.nl/uploads/og-brivaro.jpg",
+  "slogan": "Luister. Erken. Onderneem.",
+  "description": "Brivaro levert zorgmedewerkers en gecertificeerde beveiligers aan organisaties in zorg en beveiliging die kwaliteit willen.",
+  "areaServed": { "@type": "Country", "name": "Nederland" },
+  "knowsLanguage": "nl",
+  "founder": [
+    { "@type": "Person", "name": "Immanuel" },
+    { "@type": "Person", "name": "Blessing" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Bemiddeling",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bemiddeling zorgpersoneel", "serviceType": "Personeelsbemiddeling zorg" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bemiddeling beveiligers", "serviceType": "Personeelsbemiddeling beveiliging" } }
+    ]
+  }
+}
+</script>
+<script src="./support.js"></script>
+</head>
+<body>
+<noscript>
+  <div style="max-width: 680px; margin: 0 auto; padding: 48px 20px; background: #ffffff; color: #111827">
+    <h1>Brivaro: personeel voor zorg en beveiliging</h1>
+    <p>Vakmensen die doen wat ze beloven. Personeel nodig in de zorg of beveiliging? Brivaro levert zorgmedewerkers en gecertificeerde beveiligers. We kennen elke kandidaat persoonlijk en checken opleiding en ervaring volledig.</p>
+    <h2>Zorg</h2>
+    <p>De juiste match voorkomt uitval en verloop. We plaatsen op opleiding, certificering én ervaring.</p>
+    <h2>Beveiliging</h2>
+    <p>Gecertificeerde beveiligers die hun controles volledig uitvoeren. Geen ID wordt overgeslagen.</p>
+    <h2>Kennismaken</h2>
+    <p>Bespreek je personeelsvraag: mail ons op <a href="mailto:info@brivarobemiddeling.nl">info@brivarobemiddeling.nl</a>. Zoek je zelf werk? Stuur je cv en motivatiebrief naar hetzelfde adres.</p>
+  </div>
+</noscript>
+<x-dc>
 
 <div style="width: 100%; background: #ffffff; color: #111827">
   <a href="#main" style="position: fixed; left: 16px; top: -64px; z-index: 50; background: #ffffff; color: #111827; font-weight: 600; padding: 12px 18px; border-radius: 12px; box-shadow: 0 8px 24px rgba(15,27,46,0.2); transition: top 150ms ease" style-focus="top: 12px; outline: 2px solid #1B4B91; outline-offset: 2px">Naar de inhoud</a>
 
-  <header style="position: sticky; top: 0; z-index: 20; background: rgba(15,27,46,0.86); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border-bottom: 1px solid {{ headBorder }}; transition: border-color 200ms ease">
+  <header data-glass="" style="position: sticky; top: 0; z-index: 20; background: rgba(15,27,46,0.86); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border-bottom: 1px solid {{ headBorder }}; transition: border-color 200ms ease">
     <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: {{ headPadY }} clamp(20px, 4vw, 48px); min-height: {{ headMinH }}; transition: padding 250ms cubic-bezier(0.2, 0.9, 0.3, 1), min-height 250ms cubic-bezier(0.2, 0.9, 0.3, 1)">
-      <a href="#" aria-label="Brivaro, naar home" style="display: inline-flex; padding: 4px 0; border-radius: 4px" style-focus="outline: 2px solid #5B9BF5; outline-offset: 4px">
+      <a href="/" aria-label="Brivaro, naar home" style="display: inline-flex; padding: 4px 0; border-radius: 4px" style-focus="outline: 2px solid #5B9BF5; outline-offset: 4px">
         <span style="font-size: 1.75rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1; white-space: nowrap"><span style="color: #5B9BF5">Bri</span><span style="color: #ffffff">varo</span></span>
       </a>
       <sc-if value="{{ navWide }}" hint-placeholder-val="{{ true }}">
@@ -41,60 +110,62 @@
           </sc-for>
         </nav>
         <a href="#kennismaken" onClick="{{ pickPersoneel }}" style="display: inline-flex; align-items: center; gap: 12px; background: #1B4B91; color: #ffffff; font-size: 0.9375rem; font-weight: 600; padding: 12px 22px; border-radius: 999px; white-space: nowrap; transition: transform 100ms ease-out, background 150ms ease" style-hover="background: #22579f; color: #ffffff" style-active="transform: scale(0.97)" style-focus="outline: 2px solid #5B9BF5; outline-offset: 3px">
-          Maak kennis
+          Personeel aanvragen
           <svg aria-hidden="true" width="16" height="11" viewBox="0 0 18 12" fill="none" stroke="#ffffff" stroke-width="1.6"><path d="M1 6h15M11.5 1.5 16.5 6l-5 4.5" /></svg>
         </a>
       </sc-if>
       <sc-if value="{{ navNarrow }}" hint-placeholder-val="{{ false }}">
-        <button type="button" aria-label="Menu" aria-expanded="{{ menuOpen }}" onClick="{{ toggleMenu }}" style="width: 44px; height: 44px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,0.3); background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 100ms ease-out" style-active="transform: scale(0.94)" style-focus="outline: 2px solid #5B9BF5; outline-offset: 3px">
+        <button type="button" aria-label="{{ menuLabel }}" aria-expanded="{{ menuOpen }}" aria-controls="mobiel-menu" onClick="{{ toggleMenu }}" style="width: 44px; height: 44px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,0.3); background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 100ms ease-out" style-active="transform: scale(0.94)" style-focus="outline: 2px solid #5B9BF5; outline-offset: 3px">
           <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}"><svg aria-hidden="true" width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"><path d="M1 2h16M1 7h16M1 12h16" /></svg></sc-if>
           <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"><path d="M1.5 1.5l11 11M12.5 1.5l-11 11" /></svg></sc-if>
         </button>
       </sc-if>
     </div>
     <sc-if value="{{ showMobileMenu }}" hint-placeholder-val="{{ false }}">
-      <nav aria-label="Hoofdmenu" style="display: flex; flex-direction: column; height: calc(100dvh - 73px); overflow-y: auto; overscroll-behavior: contain; padding: 8px clamp(20px, 4vw, 48px) calc(24px + env(safe-area-inset-bottom))">
+      <nav id="mobiel-menu" aria-label="Hoofdmenu" style="display: flex; flex-direction: column; height: calc(100dvh - 73px); overflow-y: auto; overscroll-behavior: contain; padding: 8px clamp(20px, 4vw, 48px) calc(24px + env(safe-area-inset-bottom))">
         <sc-for list="{{ mobileNav }}" as="m" hint-placeholder-count="5">
-          <a href="{{ m.href }}" onClick="{{ m.onClick }}" style="display: flex; align-items: center; justify-content: space-between; min-height: 56px; padding: 0 4px; font-size: 1.375rem; font-weight: 600; color: #ffffff; border-bottom: 1px solid rgba(255,255,255,0.08); transition: opacity 100ms ease" style-active="opacity: 0.6">
+          <a href="{{ m.href }}" onClick="{{ m.onClick }}" style="display: flex; align-items: center; justify-content: space-between; min-height: 56px; padding: 0 4px; font-size: 1.375rem; font-weight: 600; color: #ffffff; border-bottom: 1px solid rgba(255,255,255,0.08); border-radius: 4px; transition: opacity 100ms ease" style-active="opacity: 0.6" style-focus="outline: 2px solid #5B9BF5; outline-offset: 2px">
             {{ m.label }}
             <svg aria-hidden="true" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="#5B9BF5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m1.5 1.5 5 5.5-5 5.5" /></svg>
           </a>
         </sc-for>
         <div style="margin-top: auto; padding-top: 32px; display: flex; flex-direction: column; gap: 12px">
-          <a href="#kennismaken" onClick="{{ pickPersoneelClose }}" style="display: flex; align-items: center; justify-content: center; height: 56px; background: #1B4B91; color: #ffffff; font-size: 1.0625rem; font-weight: 600; border-radius: 999px; transition: transform 100ms ease-out" style-active="transform: scale(0.97)">Maak kennis</a>
+          <a href="#kennismaken" onClick="{{ pickPersoneelClose }}" style="display: flex; align-items: center; justify-content: center; height: 56px; background: #1B4B91; color: #ffffff; font-size: 1.0625rem; font-weight: 600; border-radius: 999px; transition: transform 100ms ease-out" style-active="transform: scale(0.97)">Personeel aanvragen</a>
           <a href="tel:+31000000000" style="display: flex; align-items: center; justify-content: center; height: 56px; border: 1.5px solid rgba(255,255,255,0.3); color: #ffffff; font-size: 1.0625rem; font-weight: 600; border-radius: 999px; transition: transform 100ms ease-out" style-active="transform: scale(0.97)">Bel [telefoonnummer]</a>
         </div>
       </nav>
     </sc-if>
   </header>
 
-  <section id="main" tabindex="-1" style="position: relative; background: #0F1B2E; overflow: hidden; min-height: min(720px, 88svh); display: flex; align-items: center; outline: none">
+  <main id="main" tabindex="-1" style="display: block; outline: none">
+  <section aria-labelledby="hero-titel" style="position: relative; background: #0F1B2E; overflow: hidden; min-height: min(720px, 88svh); display: flex; align-items: center">
     <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
       <div style="position: absolute; inset: 0 0 0 48%; clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%)">
-        <img src="uploads/pexels-cottonbro-5722164.jpg" alt="Zorgmedewerker met stethoscoop" style="width: 100%; height: 100%; object-fit: cover; object-position: 40% 35%" />
+        <img src="uploads/zorgmedewerker-brivaro-1600.jpg" srcSet="uploads/zorgmedewerker-brivaro-800.jpg 800w, uploads/zorgmedewerker-brivaro-1600.jpg 1600w" sizes="52vw" width="1600" height="2400" fetchpriority="high" alt="Zorgmedewerker in blauw uniform met stethoscoop en klembord" style="width: 100%; height: 100%; object-fit: cover; object-position: 40% 35%" />
         <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,27,46,0.7) 0%, rgba(15,27,46,0.1) 45%, rgba(15,27,46,0) 100%)"></div>
       </div>
     </sc-if>
     <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
       <div style="position: absolute; inset: 0">
-        <img src="uploads/pexels-cottonbro-5722164.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 40% 30%" />
+        <img src="uploads/zorgmedewerker-brivaro-1600.jpg" srcSet="uploads/zorgmedewerker-brivaro-800.jpg 800w, uploads/zorgmedewerker-brivaro-1600.jpg 1600w" sizes="100vw" width="1600" height="2400" fetchpriority="high" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 40% 30%" />
         <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,27,46,0.6) 0%, rgba(15,27,46,0.95) 55%)"></div>
       </div>
     </sc-if>
     <div style="position: relative; padding: clamp(64px, 9vw, 112px) clamp(20px, 4vw, 48px); max-width: 680px">
-      <div style="font-size: 0.8125rem; letter-spacing: 0.1em; font-weight: 600; color: #5B9BF5; margin-bottom: 20px">BEMIDDELING IN ZORG EN BEVEILIGING</div>
-      <h1 style="margin: 0; font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1.05; font-weight: 700; letter-spacing: -0.02em; color: #ffffff; text-wrap: balance">Mens, geen nummer.</h1>
+      <h1 id="hero-titel" style="margin: 0; font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1.05; font-weight: 700; letter-spacing: -0.02em; color: #ffffff; text-wrap: balance">
+        <span style="display: block; font-size: 0.8125rem; line-height: 1.5; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: #5B9BF5; margin-bottom: 20px">Personeel voor zorg en beveiliging</span>
+        Vakmensen die doen wat ze beloven.
+      </h1>
       <p style="margin: 24px 0 0; max-width: 500px; font-size: 1.125rem; line-height: 1.5; color: #ffffff; text-wrap: pretty">
-        Brivaro bemiddelt in zorg en beveiliging. We zien de mens achter het cv, en leveren vakmensen die doen wat ze beloven.
+        Personeel nodig? Brivaro levert zorgmedewerkers en gecertificeerde beveiligers. We kennen elke kandidaat persoonlijk, en checken opleiding en ervaring volledig.
       </p>
       <div style="margin-top: 36px; display: flex; flex-direction: {{ ctaDir }}; align-items: {{ ctaAlign }}; gap: 12px; flex-wrap: wrap">
         <a href="#kennismaken" onClick="{{ pickPersoneel }}" style="display: inline-flex; align-items: center; justify-content: center; gap: 20px; background: #1B4B91; color: #ffffff; font-size: 1rem; font-weight: 600; padding: 16px 28px; border-radius: 999px; transition: transform 100ms ease-out, background 150ms ease" style-hover="background: #22579f; color: #ffffff" style-active="transform: scale(0.97)" style-focus="outline: 2px solid #5B9BF5; outline-offset: 3px">
-          Ik zoek personeel
+          Bespreek je personeelsvraag
           <svg aria-hidden="true" width="18" height="12" viewBox="0 0 18 12" fill="none" stroke="#ffffff" stroke-width="1.6"><path d="M1 6h15M11.5 1.5 16.5 6l-5 4.5" /></svg>
         </a>
-        <a href="#kennismaken" onClick="{{ pickWerk }}" style="display: inline-flex; align-items: center; justify-content: center; color: #ffffff; font-size: 1rem; font-weight: 600; padding: 14.5px 26px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,0.4); transition: transform 100ms ease-out, border-color 150ms ease" style-hover="border-color: #ffffff; color: #ffffff" style-active="transform: scale(0.97)" style-focus="outline: 2px solid #5B9BF5; outline-offset: 3px">Ik zoek werk</a>
       </div>
-      <div style="margin-top: 28px; font-size: 0.9375rem; font-weight: 600; color: #5B9BF5">Luister. Erken. Onderneem.</div>
+      <p style="margin: 24px 0 0; font-size: 0.9375rem; color: #ffffff">Zoek je zelf werk? <a href="#kennismaken" onClick="{{ pickWerk }}" style="display: inline-block; padding: 8px 2px; font-weight: 600; color: #5B9BF5; border-radius: 4px" style-hover="color: #8dbaf8" style-focus="outline: 2px solid #5B9BF5; outline-offset: 2px">Meld je hier aan</a></p>
     </div>
   </section>
 
@@ -122,7 +193,7 @@
       </ul>
     </div>
     <div id="beveiliging" style="position: relative; min-width: 0; background: #0F1B2E; overflow: hidden; padding: clamp(56px, 7vw, 96px) clamp(20px, 4vw, 48px); scroll-margin-top: 80px; min-height: 460px; display: flex; align-items: flex-end">
-      <img src="uploads/pexels-caleboquendo-34622629.jpg" alt="Beveiligers op ronde" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%" />
+      <img src="uploads/beveiligers-brivaro-1200.jpg" srcSet="uploads/beveiligers-brivaro-700.jpg 700w, uploads/beveiligers-brivaro-1200.jpg 1200w" sizes="(min-width: 900px) 34vw, 100vw" width="1200" height="1800" alt="Twee beveiligers op ronde in een winkelcentrum" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%" />
       <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,27,46,0.2) 0%, rgba(15,27,46,0.95) 60%)"></div>
       <div data-reveal="" style="position: relative; max-width: 400px">
         <div style="font-size: 0.8125rem; letter-spacing: 0.1em; font-weight: 600; color: #5B9BF5; margin-bottom: 12px">BEVEILIGING</div>
@@ -140,6 +211,7 @@
     <div data-reveal="" style="max-width: 1120px; margin: 0 auto">
       <div style="font-size: 0.8125rem; letter-spacing: 0.1em; font-weight: 600; color: #1B4B91; margin-bottom: 12px">WAAR WE VOOR STAAN</div>
       <h2 style="margin: 0; font-size: clamp(1.75rem, 3vw, 2.375rem); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #111827">Luister. Erken. Onderneem.</h2>
+      <p style="margin: 16px 0 0; max-width: 560px; font-size: 1.0625rem; line-height: 1.5; color: #111827; text-wrap: pretty">Wat je als opdrachtgever van ons mag verwachten, bij elke aanvraag en elke plaatsing.</p>
       <div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 20px">
         <sc-for list="{{ values }}" as="v" hint-placeholder-count="3">
           <div style="background: #ffffff; border-radius: 20px; padding: 32px 28px; box-shadow: 0 1px 2px rgba(15,27,46,0.04)">
@@ -154,8 +226,9 @@
 
   <section id="werkwijze" style="background: #0F1B2E; padding: clamp(64px, 8vw, 96px) clamp(20px, 4vw, 48px); scroll-margin-top: 80px">
     <div data-reveal="" style="text-align: center; max-width: 1120px; margin: 0 auto">
-      <div style="font-size: 0.8125rem; letter-spacing: 0.1em; font-weight: 600; color: #5B9BF5">WERKWIJZE</div>
-      <h2 style="margin: 12px 0 0; font-size: clamp(1.75rem, 3vw, 2.375rem); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #ffffff">Onze werkwijze</h2>
+      <div style="font-size: 0.8125rem; letter-spacing: 0.1em; font-weight: 600; color: #5B9BF5">WERKWIJZE VOOR OPDRACHTGEVERS</div>
+      <h2 style="margin: 12px 0 0; font-size: clamp(1.75rem, 3vw, 2.375rem); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #ffffff; text-wrap: balance">Personeel nodig? Zo werken we samen.</h2>
+      <p style="margin: 16px auto 0; max-width: 560px; font-size: 1.0625rem; line-height: 1.5; color: #ffffff; text-wrap: pretty">Voor zorgorganisaties en opdrachtgevers in de beveiliging. Van je eerste vraag tot ruim na de start van je nieuwe mensen.</p>
       <ol style="list-style: none; padding: 0; margin: 48px 0 0; display: flex; align-items: flex-start; justify-content: center; gap: 32px 16px; flex-wrap: wrap">
         <sc-for list="{{ steps }}" as="step" hint-placeholder-count="4">
           <li style="display: flex; align-items: flex-start; gap: 16px; flex: 1 1 200px; max-width: 270px">
@@ -171,9 +244,10 @@
         </sc-for>
       </ol>
       <a href="#kennismaken" onClick="{{ pickPersoneel }}" style="margin-top: 48px; display: inline-flex; align-items: center; gap: 20px; background: #1B4B91; color: #ffffff; font-size: 1rem; font-weight: 600; padding: 15px 26px; border-radius: 999px; transition: transform 100ms ease-out, background 150ms ease" style-hover="background: #22579f; color: #ffffff" style-active="transform: scale(0.97)" style-focus="outline: 2px solid #5B9BF5; outline-offset: 3px">
-        Maak kennis
+        Bespreek je personeelsvraag
         <svg aria-hidden="true" width="18" height="12" viewBox="0 0 18 12" fill="none" stroke="#ffffff" stroke-width="1.6"><path d="M1 6h15M11.5 1.5 16.5 6l-5 4.5" /></svg>
       </a>
+      <p style="margin: 20px 0 0; font-size: 0.9375rem; color: #ffffff">Zoek je zelf werk? <a href="#kennismaken" onClick="{{ pickWerk }}" style="display: inline-block; padding: 8px 2px; font-weight: 600; color: #5B9BF5; border-radius: 4px" style-hover="color: #8dbaf8" style-focus="outline: 2px solid #5B9BF5; outline-offset: 2px">Meld je hier aan</a></p>
     </div>
   </section>
 
@@ -220,7 +294,7 @@
               <legend style="font-size: 0.9375rem; font-weight: 600; color: #111827; margin-bottom: 10px; padding: 0">Ik ben</legend>
               <div style="display: flex; gap: 8px; flex-wrap: wrap">
                 <sc-for list="{{ roleOpts }}" as="o" hint-placeholder-count="2">
-                  <button type="button" aria-pressed="{{ o.sel }}" onClick="{{ o.pick }}" style="flex: 1 1 auto; min-height: 44px; padding: 10px 18px; border-radius: 999px; border: 1.5px solid {{ o.border }}; background: {{ o.bg }}; color: {{ o.color }}; font-size: 0.9375rem; font-weight: 600; cursor: pointer; transition: transform 100ms ease-out, background 150ms ease" style-active="transform: scale(0.97)" style-focus="outline: 2px solid #1B4B91; outline-offset: 2px">{{ o.label }}</button>
+                  <button type="button" aria-pressed="{{ o.sel }}" onClick="{{ o.pick }}" style="flex: 1 1 auto; min-height: 44px; padding: 10px 18px; border-radius: 999px; border: 1.5px solid {{ o.border }}; background: {{ o.bg }}; color: {{ o.color }}; font-size: 0.9375rem; font-weight: 600; cursor: pointer; transition: transform 100ms ease-out, background 150ms ease, color 150ms ease, border-color 150ms ease" style-active="transform: scale(0.97)" style-focus="outline: 2px solid #1B4B91; outline-offset: 2px">{{ o.label }}</button>
                 </sc-for>
               </div>
             </fieldset>
@@ -228,24 +302,35 @@
               <legend style="font-size: 0.9375rem; font-weight: 600; color: #111827; margin-bottom: 10px; padding: 0">Sector</legend>
               <div style="display: flex; gap: 8px; flex-wrap: wrap">
                 <sc-for list="{{ sectorOpts }}" as="o" hint-placeholder-count="3">
-                  <button type="button" aria-pressed="{{ o.sel }}" onClick="{{ o.pick }}" style="flex: 1 1 auto; min-height: 44px; padding: 10px 18px; border-radius: 999px; border: 1.5px solid {{ o.border }}; background: {{ o.bg }}; color: {{ o.color }}; font-size: 0.9375rem; font-weight: 600; cursor: pointer; transition: transform 100ms ease-out, background 150ms ease" style-active="transform: scale(0.97)" style-focus="outline: 2px solid #1B4B91; outline-offset: 2px">{{ o.label }}</button>
+                  <button type="button" aria-pressed="{{ o.sel }}" onClick="{{ o.pick }}" style="flex: 1 1 auto; min-height: 44px; padding: 10px 18px; border-radius: 999px; border: 1.5px solid {{ o.border }}; background: {{ o.bg }}; color: {{ o.color }}; font-size: 0.9375rem; font-weight: 600; cursor: pointer; transition: transform 100ms ease-out, background 150ms ease, color 150ms ease, border-color 150ms ease" style-active="transform: scale(0.97)" style-focus="outline: 2px solid #1B4B91; outline-offset: 2px">{{ o.label }}</button>
                 </sc-for>
               </div>
             </fieldset>
             <label style="display: flex; flex-direction: column; gap: 6px; font-size: 0.9375rem; font-weight: 600; color: #111827">
               {{ nameLabel }}
-              <input type="text" autocomplete="{{ nameAuto }}" enterKeyHint="next" aria-invalid="{{ nameInvalid }}" value="{{ form.name }}" onChange="{{ setName }}" placeholder="{{ namePh }}" style="height: 52px; padding: 0 16px; border-radius: 12px; border: 1.5px solid {{ nameBorder }}; background: #f4f6f9; font-size: 1rem; font-weight: 400; color: #111827; outline: none" style-focus="border-color: #1B4B91; background: #ffffff" />
+              <input id="veld-naam" type="text" autocomplete="{{ nameAuto }}" enterKeyHint="next" aria-required="true" aria-invalid="{{ nameInvalid }}" value="{{ form.name }}" onChange="{{ setName }}" placeholder="{{ namePh }}" style="height: 52px; padding: 0 16px; border-radius: 12px; border: 1.5px solid {{ nameBorder }}; background: #f4f6f9; font-size: 1rem; font-weight: 400; color: #111827; outline: none" style-focus="border-color: #1B4B91; background: #ffffff" />
               <sc-if value="{{ errors.name }}" hint-placeholder-val="{{ false }}"><span style="font-size: 0.875rem; font-weight: 400; color: #b42318">{{ errors.name }}</span></sc-if>
             </label>
             <label style="display: flex; flex-direction: column; gap: 6px; font-size: 0.9375rem; font-weight: 600; color: #111827">
               Telefoonnummer
-              <input type="tel" inputMode="tel" autocomplete="tel" enterKeyHint="next" aria-invalid="{{ phoneInvalid }}" value="{{ form.phone }}" onChange="{{ setPhone }}" onBlur="{{ blurPhone }}" placeholder="06 12345678" style="height: 52px; padding: 0 16px; border-radius: 12px; border: 1.5px solid {{ phoneBorder }}; background: #f4f6f9; font-size: 1rem; font-weight: 400; color: #111827; outline: none" style-focus="border-color: #1B4B91; background: #ffffff" />
+              <input id="veld-telefoon" type="tel" inputMode="tel" autocomplete="tel" enterKeyHint="next" aria-required="true" aria-invalid="{{ phoneInvalid }}" value="{{ form.phone }}" onChange="{{ setPhone }}" onBlur="{{ blurPhone }}" placeholder="06 12345678" style="height: 52px; padding: 0 16px; border-radius: 12px; border: 1.5px solid {{ phoneBorder }}; background: #f4f6f9; font-size: 1rem; font-weight: 400; color: #111827; outline: none" style-focus="border-color: #1B4B91; background: #ffffff" />
               <sc-if value="{{ errors.phone }}" hint-placeholder-val="{{ false }}"><span style="font-size: 0.875rem; font-weight: 400; color: #b42318">{{ errors.phone }}</span></sc-if>
             </label>
             <label style="display: flex; flex-direction: column; gap: 6px; font-size: 0.9375rem; font-weight: 600; color: #111827">
-              <span>E-mail <span style="font-weight: 400">(optioneel)</span></span>
-              <input type="email" inputMode="email" autocomplete="email" enterKeyHint="next" autoCapitalize="off" spellCheck="false" value="{{ form.email }}" onChange="{{ setEmail }}" placeholder="naam@voorbeeld.nl" style="height: 52px; padding: 0 16px; border-radius: 12px; border: 1.5px solid #d6dce5; background: #f4f6f9; font-size: 1rem; font-weight: 400; color: #111827; outline: none" style-focus="border-color: #1B4B91; background: #ffffff" />
+              E-mail
+              <input id="veld-email" type="email" inputMode="email" autocomplete="email" enterKeyHint="next" autoCapitalize="off" spellCheck="false" aria-required="true" aria-invalid="{{ emailInvalid }}" value="{{ form.email }}" onChange="{{ setEmail }}" onBlur="{{ blurEmail }}" placeholder="naam@voorbeeld.nl" style="height: 52px; padding: 0 16px; border-radius: 12px; border: 1.5px solid {{ emailBorder }}; background: #f4f6f9; font-size: 1rem; font-weight: 400; color: #111827; outline: none" style-focus="border-color: #1B4B91; background: #ffffff" />
+              <sc-if value="{{ errors.email }}" hint-placeholder-val="{{ false }}"><span style="font-size: 0.875rem; font-weight: 400; color: #b42318">{{ errors.email }}</span></sc-if>
             </label>
+            <sc-if value="{{ isWerk }}" hint-placeholder-val="{{ false }}">
+              <sc-for list="{{ fileFields }}" as="ff" hint-placeholder-count="2">
+                <label style="display: flex; flex-direction: column; gap: 6px; font-size: 0.9375rem; font-weight: 600; color: #111827">
+                  {{ ff.label }}
+                  <input id="{{ ff.id }}" type="file" data-file="" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" aria-required="true" aria-invalid="{{ ff.invalid }}" onChange="{{ ff.onPick }}" style="width: 100%; min-height: 52px; padding: 7px 8px; border-radius: 12px; border: 1.5px solid {{ ff.border }}; background: #f4f6f9; font-size: 0.9375rem; font-weight: 400; color: #111827; outline: none" style-focus="border-color: #1B4B91; background: #ffffff" />
+                  <span style="font-size: 0.875rem; font-weight: 400; color: #4b5563">PDF of Word, maximaal 5 MB</span>
+                  <sc-if value="{{ ff.error }}" hint-placeholder-val="{{ false }}"><span style="font-size: 0.875rem; font-weight: 400; color: #b42318">{{ ff.error }}</span></sc-if>
+                </label>
+              </sc-for>
+            </sc-if>
             <label style="display: flex; flex-direction: column; gap: 6px; font-size: 0.9375rem; font-weight: 600; color: #111827">
               <span>{{ msgLabel }} <span style="font-weight: 400">(optioneel)</span></span>
               <textarea rows="3" value="{{ form.msg }}" onChange="{{ setMsg }}" placeholder="{{ msgPh }}" style="padding: 14px 16px; border-radius: 12px; border: 1.5px solid #d6dce5; background: #f4f6f9; font-size: 1rem; font-weight: 400; color: #111827; outline: none; resize: vertical" style-focus="border-color: #1B4B91; background: #ffffff"></textarea>
@@ -265,17 +350,19 @@
             </div>
             <h3 style="margin: 0; font-size: 1.75rem; font-weight: 600; color: #111827">Bedankt, {{ firstName }}.</h3>
             <p style="margin: 0; font-size: 1.0625rem; line-height: 1.5; color: #111827">{{ thanksText }}</p>
-            <button type="button" onClick="{{ reset }}" style="margin-top: 8px; background: none; border: 0; padding: 8px 0; font-size: 1rem; font-weight: 600; color: #1B4B91; cursor: pointer">Nieuw bericht</button>
+            <button type="button" onClick="{{ reset }}" style="margin-top: 8px; min-height: 44px; background: none; border: 0; padding: 8px 0; border-radius: 4px; font-size: 1rem; font-weight: 600; color: #1B4B91; cursor: pointer" style-focus="outline: 2px solid #1B4B91; outline-offset: 3px">Nieuw bericht</button>
           </div>
         </sc-if>
       </div>
     </div>
   </section>
 
+  </main>
+
   <footer style="background: #0F1B2E; padding: 56px clamp(20px, 4vw, 48px) {{ footerPad }}">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 40px; align-items: start; padding-bottom: 32px">
       <div style="display: flex; flex-direction: column; gap: 12px">
-        <a href="#" aria-label="Brivaro, naar home" style="display: inline-flex">
+        <a href="/" aria-label="Brivaro, naar home" style="display: inline-flex">
           <span style="font-size: 1.75rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1"><span style="color: #5B9BF5">Bri</span><span style="color: #ffffff">varo</span></span>
         </a>
         <div style="font-size: 0.9375rem; font-weight: 600; color: #ffffff">Luister. Erken. Onderneem.</div>
@@ -295,6 +382,7 @@
         </a>
       </div>
       <nav aria-label="Footer" style="display: flex; flex-direction: column; gap: 12px">
+        <a href="#kennismaken" onClick="{{ pickPersoneel }}" style="font-size: 0.9375rem; font-weight: 600; color: #ffffff" style-hover="color: #5B9BF5">Personeel aanvragen</a>
         <a href="#zorg" style="font-size: 0.9375rem; color: #ffffff" style-hover="color: #5B9BF5">Zorg</a>
         <a href="#beveiliging" style="font-size: 0.9375rem; color: #ffffff" style-hover="color: #5B9BF5">Beveiliging</a>
         <a href="#werkwijze" style="font-size: 0.9375rem; color: #ffffff" style-hover="color: #5B9BF5">Werkwijze</a>
@@ -322,16 +410,16 @@
     </div>
   </footer>
 
-  <button type="button" aria-label="Terug naar boven" onClick="{{ toTop }}" tabindex="{{ topTab }}" style="position: fixed; right: 16px; bottom: {{ topBottom }}; z-index: 29; width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); background: rgba(15,27,46,0.8); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); box-shadow: 0 8px 24px rgba(15,27,46,0.25); display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: {{ topOpacity }}; transform: {{ topTransform }}; pointer-events: {{ topEvents }}; transition: opacity 200ms ease, transform 300ms cubic-bezier(0.2, 0.9, 0.3, 1)" style-active="transform: scale(0.92)" style-focus="outline: 2px solid #5B9BF5; outline-offset: 3px">
+  <button type="button" data-glass="" aria-label="Terug naar boven" onClick="{{ toTop }}" tabindex="{{ topTab }}" style="position: fixed; right: 16px; bottom: {{ topBottom }}; z-index: 29; width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); background: rgba(15,27,46,0.8); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); box-shadow: 0 8px 24px rgba(15,27,46,0.25); display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: {{ topOpacity }}; transform: {{ topTransform }}; pointer-events: {{ topEvents }}; transition: opacity 200ms ease, transform 300ms cubic-bezier(0.2, 0.9, 0.3, 1)" style-active="transform: scale(0.92)" style-focus="outline: 2px solid #5B9BF5; outline-offset: 3px">
     <svg aria-hidden="true" width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15V1.5M1.5 7 7 1.5 12.5 7" /></svg>
   </button>
 
   <sc-if value="{{ showStickyBar }}" hint-placeholder-val="{{ false }}">
-    <div style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: flex; gap: 8px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(15,27,46,0.92); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border-top: 1px solid rgba(255,255,255,0.1)">
+    <div data-glass="" style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: flex; gap: 8px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(15,27,46,0.92); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border-top: 1px solid rgba(255,255,255,0.1)">
       <a href="tel:+31000000000" aria-label="Bel Brivaro" style="flex: 0 0 52px; height: 52px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,0.35); display: flex; align-items: center; justify-content: center">
         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linejoin="round"><path d="M6 3.5h3.2l1.6 4-2 1.6c.8 2.4 2.7 4.3 5.1 5.1l1.6-2 4 1.6V17c0 1.9-1.6 3.5-3.5 3.5C10.2 20.5 3.5 13.8 3.5 7 3.5 5.1 4.1 3.5 6 3.5Z" /></svg>
       </a>
-      <a href="#kennismaken" onClick="{{ pickPersoneel }}" style="flex: 1 1 auto; height: 52px; border-radius: 999px; background: #1B4B91; color: #ffffff; font-size: 1rem; font-weight: 600; display: flex; align-items: center; justify-content: center; transition: transform 100ms ease-out" style-active="transform: scale(0.97)">Maak kennis</a>
+      <a href="#kennismaken" onClick="{{ pickPersoneel }}" style="flex: 1 1 auto; height: 52px; border-radius: 999px; background: #1B4B91; color: #ffffff; font-size: 1rem; font-weight: 600; display: flex; align-items: center; justify-content: center; transition: transform 100ms ease-out" style-active="transform: scale(0.97)">Personeel aanvragen</a>
     </div>
   </sc-if>
 </div>
@@ -341,10 +429,14 @@ class Component extends DCLogic {
   state = {
     w: typeof window !== 'undefined' ? window.innerWidth : 1280,
     menuOpen: false, scrolled: false, atTop: true, active: '', sending: false, role: 'personeel', sector: 'Zorg', sent: false,
-    form: { name: '', phone: '', email: '', msg: '' }, errors: {},
+    form: { name: '', phone: '', email: '', msg: '', cv: null, motivatie: null }, errors: {},
   };
   componentDidMount() {
-    this.onResize = () => this.setState({ w: window.innerWidth });
+    this.onResize = () => {
+      const w = window.innerWidth;
+      if (w !== this.state.w) this.setState(s => ({ w, menuOpen: w >= 1180 ? false : s.menuOpen }));
+    };
+    this.onKey = e => { if (e.key === 'Escape' && this.state.menuOpen) this.setState({ menuOpen: false }); };
     const ids = ['zorg', 'beveiliging', 'werkwijze', 'over-ons', 'kennismaken'];
     this.onScroll = () => {
       if (this.raf) return;
@@ -359,6 +451,8 @@ class Component extends DCLogic {
       });
     };
     window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onResize, { passive: true });
+    window.addEventListener('keydown', this.onKey);
     this.setupReveal();
     this.onResize();
   }
@@ -388,7 +482,9 @@ class Component extends DCLogic {
     if (this.revealAll) window.removeEventListener('beforeprint', this.revealAll);
     if (this.onFirstScroll) window.removeEventListener('scroll', this.onFirstScroll);
     clearTimeout(this.sendT);
+    if (this.raf) cancelAnimationFrame(this.raf);
     window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('keydown', this.onKey);
     window.removeEventListener('scroll', this.onScroll);
   }
   setField(k) {
@@ -396,6 +492,18 @@ class Component extends DCLogic {
       const v = e.target.value;
       this.setState(s => ({ form: { ...s.form, [k]: v }, errors: { ...s.errors, [k]: undefined } }));
     };
+  }
+  setFile(k) {
+    return e => {
+      const f = e.target.files && e.target.files[0] ? e.target.files[0] : null;
+      this.setState(s => ({ form: { ...s.form, [k]: f }, errors: { ...s.errors, [k]: f ? this.fileError(f) : undefined } }));
+    };
+  }
+  fileError(f) {
+    if (!f) return undefined;
+    if (!/\.(pdf|docx?)$/i.test(f.name)) return 'Upload een PDF- of Word-bestand.';
+    if (f.size > 5 * 1024 * 1024) return 'Dit bestand is groter dan 5 MB.';
+    return undefined;
   }
   renderVals() {
     const { w, menuOpen, scrolled, atTop, active, sending, role, sector, sent, form, errors } = this.state;
@@ -409,9 +517,10 @@ class Component extends DCLogic {
     const chip = (sel) => ({ bg: sel ? '#0F1B2E' : '#ffffff', color: sel ? '#ffffff' : '#111827', border: sel ? '#0F1B2E' : '#d6dce5' });
     const showTop = scrolled && !menuOpen;
     const bad = '#b42318', ok = '#d6dce5';
+    const emailOk = v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
     const stepData = [
-      { t: 'Kennismaking', d: 'We luisteren naar je vraag en vragen door tot we die echt begrijpen.' },
-      { t: 'Selectie', d: 'Een echt gesprek met elke kandidaat. Opleiding en ervaring checken we volledig.' },
+      { t: 'Je personeelsvraag', d: 'We luisteren naar wie je zoekt en vragen door tot we het echt begrijpen.' },
+      { t: 'Selectie', d: 'Wij voeren een echt gesprek met elke kandidaat. Opleiding en ervaring checken we volledig.' },
       { t: 'De juiste match', d: 'Vakmensen die passen bij je team, je cliënten en je locatie.' },
       { t: 'We blijven betrokken', d: 'We zoeken mee, ook na de start. Je hoort altijd van ons.' },
       { t: 'Evaluatie', d: 'We stemmen af en sturen bij waar nodig.' },
@@ -420,6 +529,7 @@ class Component extends DCLogic {
     const sectorWord = sector === 'Beide' ? 'zorg en beveiliging' : sector.toLowerCase();
     return {
       wide, narrow: !wide, menuOpen, menuClosed: !menuOpen,
+      menuLabel: menuOpen ? 'Menu sluiten' : 'Menu openen',
       navWide: w >= 1180, navNarrow: w < 1180,
       showMobileMenu: w < 1180 && menuOpen,
       svcCols: wide ? 'minmax(0, 2fr) minmax(0, 1fr)' : 'minmax(0, 1fr)',
@@ -436,11 +546,16 @@ class Component extends DCLogic {
         const on = key === active || (key === 'kennismaken-werk' && active === 'kennismaken' && isWerk);
         return { label, href, onClick, current: on ? 'location' : 'false', bg: on ? 'rgba(255,255,255,0.12)' : 'transparent', weight: on ? 600 : 400 };
       }),
+      isWerk,
+      fileFields: [['cv', 'veld-cv', 'Cv'], ['motivatie', 'veld-motivatie', 'Motivatiebrief']].map(([k, id, label]) => ({
+        id, label, error: errors[k], invalid: errors[k] ? 'true' : 'false', border: errors[k] ? bad : ok, onPick: this.setFile(k),
+      })),
       sending, notSending: !sending,
-      submitLabel: sending ? 'Versturen' : 'Maak kennis',
+      submitLabel: sending ? 'Versturen' : isWerk ? 'Verstuur aanmelding' : 'Verstuur personeelsvraag',
       submitOpacity: sending ? 0.85 : 1,
       spinner: React.createElement('span', { 'aria-hidden': true, style: { width: 18, height: 18, borderRadius: '50%', border: '2px solid rgba(255,255,255,0.35)', borderTopColor: '#ffffff', display: 'inline-block', animation: 'bv-spin 700ms linear infinite' } }),
-      nameInvalid: errors.name ? 'true' : 'false', phoneInvalid: errors.phone ? 'true' : 'false',
+      nameInvalid: errors.name ? 'true' : 'false', phoneInvalid: errors.phone ? 'true' : 'false', emailInvalid: errors.email ? 'true' : 'false',
+      blurEmail: () => { const v = form.email.trim(); if (v && !emailOk(v)) this.setState(s => ({ errors: { ...s.errors, email: 'Vul een geldig e-mailadres in.' } })); },
       blurPhone: () => { const d = form.phone.replace(/\D/g, ''); if (d.length > 0 && d.length < 9) this.setState(s => ({ errors: { ...s.errors, phone: 'Vul een geldig telefoonnummer in.' } })); },
       footerPad: sticky ? '96px' : '24px',
       topOpacity: showTop ? 1 : 0,
@@ -480,8 +595,8 @@ class Component extends DCLogic {
       steps: stepData.slice(0, count).map((s, i) => ({ ...s, n: i + 1, arrow: arrows && i < count - 1 })),
       formTitle: isWerk ? 'Bij ons ben je geen nummer.' : 'Vakmensen zonder twijfelgevallen.',
       formIntro: isWerk
-        ? 'Zoek je werk in de zorg of beveiliging? Laat je gegevens achter. We bellen je deze week voor een kennismaking.'
-        : 'Vertel ons wie je zoekt. We bellen je deze week voor een kennismaking en denken mee over de juiste match.',
+        ? 'Zoek je werk in de zorg of beveiliging? Laat je gegevens achter en stuur je cv en motivatiebrief mee. We bellen je deze week voor een kennismaking.'
+        : 'Vertel ons wie je zoekt: welke functie, hoeveel uur en vanaf wanneer. We bellen je deze week en denken mee over de juiste match.',
       formPoints: isWerk
         ? ['Een echt gesprek, niet alleen een cv', 'We zoeken mee, ook na je start', 'Hard werken wordt gezien']
         : ['Opleiding, certificering en ervaring gecheckt', 'Eén vast aanspreekpunt', 'Controles altijd volledig'],
@@ -493,25 +608,38 @@ class Component extends DCLogic {
       msgLabel: isWerk ? 'Over jou' : 'Je personeelsvraag',
       msgPh: isWerk ? 'Je opleiding, ervaring en wat je zoekt' : 'Welke functie, hoeveel uur, vanaf wanneer?',
       form, errors,
-      nameBorder: errors.name ? bad : ok, phoneBorder: errors.phone ? bad : ok,
+      nameBorder: errors.name ? bad : ok, phoneBorder: errors.phone ? bad : ok, emailBorder: errors.email ? bad : ok,
       setName: this.setField('name'), setPhone: this.setField('phone'),
       setEmail: this.setField('email'), setMsg: this.setField('msg'),
       sent, notSent: !sent,
       firstName: form.name.trim().split(/[\s,]/)[0] || '',
       thanksText: isWerk
-        ? `We hebben je bericht ontvangen. We bellen je deze week op ${form.phone} voor een kennismaking over werk in de ${sectorWord}.`
+        ? `We hebben je cv en motivatiebrief ontvangen. We bellen je deze week op ${form.phone} voor een kennismaking over werk in de ${sectorWord}.`
         : `We hebben je personeelsvraag voor ${sectorWord} ontvangen. We bellen je deze week op ${form.phone} voor een kennismaking.`,
       submit: e => {
         e.preventDefault();
         const er = {};
         if (!form.name.trim()) er.name = 'Vul je naam in.';
         if (form.phone.replace(/\D/g, '').length < 9) er.phone = 'Vul een geldig telefoonnummer in.';
+        if (!form.email.trim()) er.email = 'Vul je e-mailadres in.';
+        else if (!emailOk(form.email.trim())) er.email = 'Vul een geldig e-mailadres in.';
+        if (isWerk) {
+          er.cv = form.cv ? this.fileError(form.cv) : 'Voeg je cv toe.';
+          er.motivatie = form.motivatie ? this.fileError(form.motivatie) : 'Voeg je motivatiebrief toe.';
+          if (!er.cv) delete er.cv;
+          if (!er.motivatie) delete er.motivatie;
+        }
         if (this.state.sending) return;
-        if (Object.keys(er).length) return this.setState({ errors: er });
+        if (Object.keys(er).length) {
+          const firstKey = ['name', 'phone', 'email', 'cv', 'motivatie'].find(k => er[k]);
+          const first = document.getElementById({ name: 'veld-naam', phone: 'veld-telefoon', email: 'veld-email', cv: 'veld-cv', motivatie: 'veld-motivatie' }[firstKey]);
+          if (first) first.focus();
+          return this.setState({ errors: er });
+        }
         this.setState({ sending: true, errors: {} });
         this.sendT = setTimeout(() => this.setState({ sending: false, sent: true }), 700);
       },
-      reset: () => this.setState({ sent: false, form: { name: '', phone: '', email: '', msg: '' } }),
+      reset: () => this.setState({ sent: false, errors: {}, form: { name: '', phone: '', email: '', msg: '', cv: null, motivatie: null } }),
     };
   }
 }
