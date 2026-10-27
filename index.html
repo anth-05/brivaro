@@ -42,7 +42,6 @@
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     * { transition-property: opacity, color, background-color, border-color !important; }
-    [data-glass] { transform: none !important; }
   }
   @media (prefers-reduced-transparency: reduce) {
     [data-glass] { background: #0F1B2E !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
@@ -252,13 +251,18 @@
   </section>
 
   <section id="over-ons" style="background: #ffffff; padding: clamp(64px, 8vw, 96px) clamp(20px, 4vw, 48px); scroll-margin-top: 80px">
-    <div data-reveal="" style="max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 48px; align-items: start">
-      <div style="max-width: 440px">
-        <div style="font-size: 0.8125rem; letter-spacing: 0.1em; font-weight: 600; color: #1B4B91; margin-bottom: 12px">OVER ONS</div>
-        <h2 style="margin: 0; font-size: clamp(1.75rem, 3vw, 2.375rem); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #111827; text-wrap: balance">Het hart en de scherpte in één merk.</h2>
-        <p style="margin: 16px 0 0; font-size: 1rem; line-height: 1.5; color: #111827; text-wrap: pretty">We zagen mensen behandeld als nummer, en te vaak vakmensen die hun controles overslaan. Dus koppelen we vakmensen met een hart voor het werk aan organisaties die kwaliteit willen. Zo maken we het verschil.</p>
+    <div data-reveal="" style="max-width: 1120px; margin: 0 auto">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 48px; align-items: center">
+        <div style="border-radius: 999px; overflow: hidden; aspect-ratio: 1 / 1; width: 100%; max-width: 460px; justify-self: center; background: #f4f6f9">
+          <img src="uploads/oprichters-brivaro-1200.jpg" srcSet="uploads/oprichters-brivaro-700.jpg 700w, uploads/oprichters-brivaro-1200.jpg 1200w" sizes="(min-width: 900px) 460px, 100vw" width="1200" height="1952" alt="Immanuel en Blessing, de oprichters van Brivaro" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%" />
+        </div>
+        <div style="max-width: 480px">
+          <div style="font-size: 0.8125rem; letter-spacing: 0.1em; font-weight: 600; color: #1B4B91; margin-bottom: 12px">OVER ONS</div>
+          <h2 style="margin: 0; font-size: clamp(1.75rem, 3vw, 2.375rem); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #111827; text-wrap: balance">Het hart en de scherpte in één merk.</h2>
+          <p style="margin: 16px 0 0; font-size: 1rem; line-height: 1.5; color: #111827; text-wrap: pretty">We zagen mensen behandeld als nummer, en te vaak vakmensen die hun controles overslaan. Dus koppelen we vakmensen met een hart voor het werk aan organisaties die kwaliteit willen. Zo maken we het verschil.</p>
+        </div>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 20px">
+      <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 20px">
         <sc-for list="{{ founders }}" as="f" hint-placeholder-count="2">
           <div style="background: #f4f6f9; border-radius: 20px; padding: 28px">
             <div style="width: 56px; height: 56px; border-radius: 999px; background: #1B4B91; color: #ffffff; font-size: 1.375rem; font-weight: 700; display: flex; align-items: center; justify-content: center">{{ f.i }}</div>
@@ -406,7 +410,7 @@
       </div>
     </div>
     <div style="margin-top: 16px; display: flex; justify-content: center; font-size: 0.8125rem; color: #ffffff">
-      <span>Powered by <a href="https://branch.nu" target="_blank" rel="noopener" style="font-weight: 600; color: #5B9BF5" style-hover="color: #8dbaf8">Branch</a></span>
+      <span>Aangedreven door <a href="https://branch.nu" target="_blank" rel="noopener" style="font-weight: 600; color: #5B9BF5" style-hover="color: #8dbaf8">Branch</a></span>
     </div>
   </footer>
 
@@ -415,7 +419,7 @@
   </button>
 
   <sc-if value="{{ showStickyBar }}" hint-placeholder-val="{{ false }}">
-    <div data-glass="" style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: flex; gap: 8px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(15,27,46,0.92); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border-top: 1px solid rgba(255,255,255,0.1)">
+    <div data-glass="" style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; transform: {{ barTransform }}; display: flex; gap: 8px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(15,27,46,0.92); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border-top: 1px solid rgba(255,255,255,0.1)">
       <a href="tel:+31000000000" aria-label="Bel Brivaro" style="flex: 0 0 52px; height: 52px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,0.35); display: flex; align-items: center; justify-content: center">
         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linejoin="round"><path d="M6 3.5h3.2l1.6 4-2 1.6c.8 2.4 2.7 4.3 5.1 5.1l1.6-2 4 1.6V17c0 1.9-1.6 3.5-3.5 3.5C10.2 20.5 3.5 13.8 3.5 7 3.5 5.1 4.1 3.5 6 3.5Z" /></svg>
       </a>
@@ -428,7 +432,7 @@
 class Component extends DCLogic {
   state = {
     w: typeof window !== 'undefined' ? window.innerWidth : 1280,
-    menuOpen: false, scrolled: false, atTop: true, active: '', sending: false, role: 'personeel', sector: 'Zorg', sent: false,
+    menuOpen: false, scrolled: false, atTop: true, vvGap: 0, typing: false, active: '', sending: false, role: 'personeel', sector: 'Zorg', sent: false,
     form: { name: '', phone: '', email: '', msg: '', cv: null, motivatie: null }, errors: {},
   };
   componentDidMount() {
@@ -452,6 +456,26 @@ class Component extends DCLogic {
     };
     window.addEventListener('scroll', this.onScroll, { passive: true });
     window.addEventListener('resize', this.onResize, { passive: true });
+    // iOS Safari can leave the visible area offset from the layout viewport (notably after the
+    // keyboard closes), stranding bottom-fixed UI mid-screen. Track the gap and shift by it.
+    const vv = window.visualViewport;
+    this.onViewport = () => {
+      if (this.vvRaf) return;
+      this.vvRaf = requestAnimationFrame(() => {
+        this.vvRaf = null;
+        const gap = vv && vv.scale < 1.01 ? Math.round(vv.offsetTop + vv.height - document.documentElement.clientHeight) : 0;
+        if (gap !== this.state.vvGap) this.setState({ vvGap: gap });
+      });
+    };
+    if (vv) { vv.addEventListener('resize', this.onViewport); vv.addEventListener('scroll', this.onViewport); }
+    const isField = el => el && (el.tagName === 'TEXTAREA' || (el.tagName === 'INPUT' && el.type !== 'file'));
+    this.onFocusIn = e => { if (isField(e.target)) this.setState({ typing: true }); };
+    this.onFocusOut = () => {
+      clearTimeout(this.blurT);
+      this.blurT = setTimeout(() => { if (!isField(document.activeElement)) { this.setState({ typing: false }); this.onViewport(); } }, 120);
+    };
+    document.addEventListener('focusin', this.onFocusIn);
+    document.addEventListener('focusout', this.onFocusOut);
     window.addEventListener('keydown', this.onKey);
     this.setupReveal();
     this.onResize();
@@ -483,6 +507,11 @@ class Component extends DCLogic {
     if (this.onFirstScroll) window.removeEventListener('scroll', this.onFirstScroll);
     clearTimeout(this.sendT);
     if (this.raf) cancelAnimationFrame(this.raf);
+    if (this.vvRaf) cancelAnimationFrame(this.vvRaf);
+    clearTimeout(this.blurT);
+    if (window.visualViewport) { window.visualViewport.removeEventListener('resize', this.onViewport); window.visualViewport.removeEventListener('scroll', this.onViewport); }
+    document.removeEventListener('focusin', this.onFocusIn);
+    document.removeEventListener('focusout', this.onFocusOut);
     window.removeEventListener('resize', this.onResize);
     window.removeEventListener('keydown', this.onKey);
     window.removeEventListener('scroll', this.onScroll);
@@ -506,7 +535,7 @@ class Component extends DCLogic {
     return undefined;
   }
   renderVals() {
-    const { w, menuOpen, scrolled, atTop, active, sending, role, sector, sent, form, errors } = this.state;
+    const { w, menuOpen, scrolled, atTop, active, sending, role, sector, sent, form, errors, vvGap, typing } = this.state;
     const wide = w >= 900;
     const sticky = !wide && (this.props.mobileStickyCta ?? true);
     const count = this.props.stepCount ?? 4;
@@ -515,7 +544,7 @@ class Component extends DCLogic {
     const go = (patch, close) => () => this.setState({ ...patch, sent: false, ...(close ? { menuOpen: false } : {}) });
     const closeMenu = () => this.setState({ menuOpen: false });
     const chip = (sel) => ({ bg: sel ? '#0F1B2E' : '#ffffff', color: sel ? '#ffffff' : '#111827', border: sel ? '#0F1B2E' : '#d6dce5' });
-    const showTop = scrolled && !menuOpen;
+    const showTop = scrolled && !menuOpen && !typing;
     const bad = '#b42318', ok = '#d6dce5';
     const emailOk = v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
     const stepData = [
@@ -534,7 +563,8 @@ class Component extends DCLogic {
       showMobileMenu: w < 1180 && menuOpen,
       svcCols: wide ? 'minmax(0, 2fr) minmax(0, 1fr)' : 'minmax(0, 1fr)',
       ctaDir: w < 600 ? 'column' : 'row', ctaAlign: w < 600 ? 'stretch' : 'center',
-      showStickyBar: sticky && !menuOpen && active !== 'kennismaken',
+      showStickyBar: sticky && !menuOpen && !typing && active !== 'kennismaken',
+      barTransform: vvGap ? `translateY(${vvGap}px)` : 'none',
       headBorder: atTop ? 'rgba(255,255,255,0)' : 'rgba(255,255,255,0.1)',
       headPadY: w >= 1180 && !atTop ? '8px' : '14px',
       headMinH: w >= 1180 && !atTop ? '60px' : '72px',
@@ -559,7 +589,7 @@ class Component extends DCLogic {
       blurPhone: () => { const d = form.phone.replace(/\D/g, ''); if (d.length > 0 && d.length < 9) this.setState(s => ({ errors: { ...s.errors, phone: 'Vul een geldig telefoonnummer in.' } })); },
       footerPad: sticky ? '96px' : '24px',
       topOpacity: showTop ? 1 : 0,
-      topTransform: showTop ? 'translateY(0)' : 'translateY(12px)',
+      topTransform: `translateY(${vvGap + (showTop ? 0 : 12)}px)`,
       topEvents: showTop ? 'auto' : 'none',
       topTab: showTop ? 0 : -1,
       topBottom: sticky ? 'calc(84px + env(safe-area-inset-bottom))' : 'calc(24px + env(safe-area-inset-bottom))',
